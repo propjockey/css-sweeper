@@ -5,6 +5,8 @@ MineSweeper implemented in CSS + HTML using the Space Toggle trick (no JavaScrip
 
 <a href="https://propjockey.github.io/css-sweeper/">PLAY IT HERE!</a>
 
+NOTE: this is <a href="https://github.com/propjockey/DOMinion-build-demo">another stress test</a>, expect lag for the next several years of average computer advancement!
+
 <img src="https://propjockey.github.io/css-sweeper/css-sweeper.gif">
 
 ## Win Condition
