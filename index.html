@@ -11959,11 +11959,12 @@
         var(--adj6num, 0) +
         var(--adj7num, 0)
       );
-      --swept-bw: var(--swept) 1px;
-      --bw: var(--swept-bw, calc(var(--checksize) / 5));
+      --swept-or-safe-and-num-bw: var(--swept, var(--isbombadjecent) var(--revealer-swept-adj)) 1px;
+      --bw: var(--swept-or-safe-and-num-bw, calc(var(--checksize) / 5));
       --swept-border: var(--swept) solid #888888;
+      --safe-reveal-and-isnum-border: var(--isbombadjecent) var(--revealer-swept-adj) solid #888888;
       --safe-reveale-border: var(--revealer-swept-adj) outset rgba(196, 255, 196, 0.75);
-      border: var(--bw) var(--swept-border, var(--safe-reveale-border, outset #f0f0f0));
+      border: var(--bw) var(--swept-border, var(--safe-reveal-and-isnum-border, var(--safe-reveale-border, outset #f0f0f0)));
       --numBG: var(--isbombadjecent) var(--numImg)
                   left calc(var(--checksize) * var(--bombAdjCount) * -1 - var(--bw))
                   top calc(var(--bw) * -1)
