@@ -10,14 +10,11 @@
   <meta name="viewport" content="width=device-width">
   <title>Email-Sweeper - MineSweeper implemented in CSS + HTML for Email Signatures</title>
   <style>
-    * {
-      box-sizing: border-box;
-      font-family: sans-serif;
-      margin: 0px;
-      padding: 0px;
-      user-select: none;
-    }
-
+  /*
+	 * css-media-vars
+	 * BSD 2-Clause License
+	 *  Copyright (c) James0x57, PropJockey, 2020
+	 */
     html {
       --sm-size: var(--media-lte-sm) 100vw;
       --width: var(--sm-size, 300px);
@@ -192,6 +189,17 @@
       html {
         --media-portrait: ;
       }
+    }
+	/*
+	 * end css-media-vars
+	 */
+	
+    * {
+      box-sizing: border-box;
+      font-family: sans-serif;
+      margin: 0px;
+      padding: 0px;
+      user-select: none;
     }
 
     #game-state-input {
@@ -2389,7 +2397,7 @@
 	<p>YOUR COMPANY</p>
 	<p>YOUR PHONE NUMBER</p>
 	<br />
-	<p>Enjoy some Minesweeper!</p>
+	<p>Enjoy some MineSweeper!</p>
 	<br />
   </div>
   <form id="game-state-input">
