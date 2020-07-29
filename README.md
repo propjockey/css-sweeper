@@ -62,8 +62,14 @@ levels.forEach((lvl, i) => {
     --red-if-toggler: var(--toggler) red;
     background: var(--red-if-toggler, green); /* will be green! */
   ```
-* Space Toggles can be combined for AND logic: `--red-if-togglersalltrue: var(--tog1) var(--tog2) var(--tog3) red;`
-* Space Toggles can be combined for OR logic: `--red-if-anytogglertrue: var(--tog1, var(--tog2, var(--tog3))) red;`
+* Space Toggles can be combined for AND logic: 
+  ```css
+    --red-if-togglersalltrue: var(--tog1) var(--tog2) var(--tog3) red;
+  ```
+* Space Toggles can be combined for OR logic: 
+  ```css
+    --red-if-anytogglertrue: var(--tog1, var(--tog2, var(--tog3))) red;
+  ```
 * Checkboxes (and radio buttons) make a great source for space toggles (shout out to <a href="https://twitter.com/RockStarwind">@RockStarwind</a> for that idea)
   ```css
     #common-css-var-area { /* default any "not" values to truthy */ --not-flagged: ; }
